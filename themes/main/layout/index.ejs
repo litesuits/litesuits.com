@@ -1,3 +1,17 @@
-<div class="outer" style="height:900px">
-  <h2>Coming soon!</h2>
+<div id="components" class="section">
+  <h3>Light but Powerful</h3>
+  <p class="subtitle">The core idea of Litesuits is to be small but powerful. With minimality, concentration, stability and flexibility, Litesuits will give you a brand-new experience of simple coding.</p>
+  <div class="components-table">
+  <% for(var i in site.data.projects) { %>
+    <% var project = site.data.projects[i] %>
+    <div class="component-row">
+      <span class="icon <%= project.name %> left"></span>
+      <h4><%= project.name %></h4>
+      <p class="description"><%= project.description %></p>
+      <p class="link">
+        <a class="btn-main btn-ghost" href="<%= project.link %>">Get <%= project.name %></a>
+      </p>
+    </div>
+  <% } %>
+  </div>
 </div>

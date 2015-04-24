@@ -23,6 +23,13 @@
   #slide-icon
     height: logo-size * 0.8
     background-size: logo-size * 0.8 logo-size * 0.8
+  #main
+    .section
+      h3
+        font-size: 24px
+        line-height: 40px
+    .components-table
+      margin: 64px 20px
 
 @media mq-tablet
   #header.index
@@ -36,6 +43,16 @@
   #slide-icon
     height: logo-size * 0.6
     background-size: logo-size * 0.6 logo-size * 0.6
+  #main
+    .section
+      padding: 60px 0
+      h3
+        font-size: 24px
+        line-height: 40px
+      .subtitle
+        font-size: 18px
+  .components-table
+    margin: 64px 20px
 
 @media mq-mobile
   #header.index
@@ -49,13 +66,40 @@
   #slide-icon
     height: logo-size * 0.4
     background-size: logo-size * 0.4 logo-size * 0.4
+  #main
+    .section
+      padding: 60px 0
+      h3
+        font-size: 21px
+        line-height: 32px
+        margin-bottom: 10px
+      .subtitle
+        font-size: 17px
+        line-height: 25px
+  .components-table
+    margin: 64px 0
+    .component-row
+      text-align: center
+    .icon
+      width: 96px
+      height: 96px
+      float: none
+    h4, p
+      padding-left: 0
+    h4
+      font-size: 21px
+      line-height: 32px
+      margin-bottom: 10px
+    p
+      font-size: 17px
+      line-height: 25px
 
 @media screen and (max-width: 580px)
   #sub-nav,
-  #footer .feature > div
-    margin-top: 0 !important
   #footer .feature .left
     display: none
+  #footer .feature > div
+    margin-top: 0 !important
   #footer .feature .right
     float: none
     text-align: center

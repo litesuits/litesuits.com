@@ -15,24 +15,48 @@
   &:hover
     background-color: color-blue + #111
 
-.btn-group
-  .btn-main
+.btn-main
+  color: white
+  font-size: 14px
+  padding: 10px 20px
+  border-radius: 3px
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+.btn-ghost
+  color: #28AFFA
+  line-height: 1em
+  font-weight: 600
+  text-shadow: none
+  transition: 0.2s ease
+  background: transparent
+  box-shadow: inset 0 0 0 1px #A9DFFD
+  &:hover,
+  &:focus
     color: white
-    font-size: 14px
-    padding: 10px 20px
-    border-radius: 3px
-    display: inline-block
-    text-decoration: none
-    text-transform: uppercase
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
-    &:last-child
-      margin-left: 15px
+    background-color: #28AFFA
+    box-shadow: none
       
 .logo
   width: 64px
   height: 64px
   display: inline-block
   background: url("images/logo.png") center center no-repeat
+  
+
+.LiteHttp
+  background-image: url(images/http.png)
+.LiteAsync
+  background-image: url(images/async.png)
+.LiteOrm
+  background-image: url(images/orm.png)
+.LiteBle
+  background-image: url(images/ble.png)
+.LiteCommon
+  background-image: url(images/common.png)
+.LiteUI
+  background-image: url(images/ui.png)
 
 $nav-link
   float: left
@@ -52,3 +76,12 @@ $nav-link
   @extend $nav-link
   @media mq-mobile
     display: none
+
+.nav-icon
+  @extend $nav-link
+  text-align: center
+  font-size: font-size
+  width: font-size
+  height: font-size
+  position: relative
+  cursor: pointer
