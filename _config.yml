@@ -9,12 +9,12 @@ description:
 author: PPOffice
 language:
 timezone:
-github: https://github.com/litesuits
+github: https://github.com/litesuits.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://ppoffice.github.io/litesuits.com/
+root: /litesuits.com/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
