@@ -1,0 +1,66 @@
+@media mq-desktop
+  #header.index
+    height: 760px
+  #header-playground
+    margin-top: 100px
+    h2
+      font-size: 32px
+      line-height: 32px
+      margin-top: 40px
+  #slide-icon
+    height: logo-size
+    background-size: logo-size logo-size
+    
+@media mq-normal
+  #header.index
+    height: 640px
+  #header-playground
+    margin-top: 80px
+    h2
+      font-size: 26px
+      line-height: 26px
+      margin-top: 30px
+  #slide-icon
+    height: logo-size * 0.8
+    background-size: logo-size * 0.8 logo-size * 0.8
+
+@media mq-tablet
+  #header.index
+    height: 480px
+  #header-playground
+    margin-top: 50px
+    h2
+      font-size: 20px
+      line-height: 20px
+      margin-top: 20px
+  #slide-icon
+    height: logo-size * 0.6
+    background-size: logo-size * 0.6 logo-size * 0.6
+
+@media mq-mobile
+  #header.index
+    height: 360px
+  #header-playground
+    margin-top: 20px
+    h2
+      font-size: 16px
+      line-height: 16px
+      margin-top: 20px
+  #slide-icon
+    height: logo-size * 0.4
+    background-size: logo-size * 0.4 logo-size * 0.4
+
+@media screen and (max-width: 580px)
+  #sub-nav,
+  #footer .feature > div
+    margin-top: 0 !important
+  #footer .feature .left
+    display: none
+  #footer .feature .right
+    float: none
+    text-align: center
+    
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+  .logo
+    background: url("images/logo@2x.png") center center no-repeat
+    background-size: 64px 64px

@@ -1,0 +1,54 @@
+.green
+  color: color-green !important
+  &:hover
+    color: color-green + #111
+.bg-green
+  background-color: color-green
+  &:hover
+    background-color: color-green + #111
+.blue
+  color: color-blue !important
+  &:hover
+    color: color-blue + #111
+.bg-blue
+  background-color: color-blue
+  &:hover
+    background-color: color-blue + #111
+
+.btn-group
+  .btn-main
+    color: white
+    font-size: 14px
+    padding: 10px 20px
+    border-radius: 3px
+    display: inline-block
+    text-decoration: none
+    text-transform: uppercase
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+    &:last-child
+      margin-left: 15px
+      
+.logo
+  width: 64px
+  height: 64px
+  display: inline-block
+  background: url("images/logo.png") center center no-repeat
+
+$nav-link
+  float: left
+  display: block
+  font-size: 12px
+  font-weight: 600
+  padding: 20px 15px
+  text-decoration: none
+  color: color-header-nav
+  transition: color 0.2s
+  text-transform: uppercase
+  text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px
+  &:hover
+    color: white
+
+.nav-link
+  @extend $nav-link
+  @media mq-mobile
+    display: none

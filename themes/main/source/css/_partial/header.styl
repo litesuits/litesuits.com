@@ -1,0 +1,117 @@
+#header
+  position: relative
+  background: color-header-background
+  &.index
+    background: color-header-background url(images/bg_teaser.svg) 50% 50% no-repeat
+
+#header-outer
+  height: 100%
+  position: relative
+
+#header-inner
+  position: relative
+  overflow: hidden
+
+#header-playground
+  left: 0
+  text-align: center
+  h2
+    color: white
+  .btn-group
+    margin-top: 50px
+
+#main-nav
+  float: left
+  margin-left: -15px
+
+#main-nav-toggle
+  display: none
+  &:before
+    content: "\f0c9"
+  @media mq-mobile
+    display: block
+
+#sub-nav
+  float: right
+  margin-right: -15px
+
+#slide-icon
+  background-position: center
+  background-repeat: no-repeat
+  transition: 0.4s ease
+  &.LiteHttp
+    background-image: url(images/http.png)
+  &.LiteAsync
+    background-image: url(images/async.png)
+  &.LiteOrm
+    background-image: url(images/orm.png)
+  &.LiteBle
+    background-image: url(images/ble.png)
+  &.LiteCommon
+    background-image: url(images/common.png)
+  &.LiteUI
+    background-image: url(images/ui.png)
+
+@keyframes cursor-blink
+  1%
+    opacity: 0
+  40%
+    opacity: 0
+  60%
+    opacity: 1
+  100%
+    opacity: 1
+
+#what-are-litesuits:after
+  animation: cursor-blink 0.8s linear infinite
+  content: "|"
+  padding-left: 3px
+
+#search-form-wrap
+  position: absolute
+  top: 15px
+  width: 150px
+  height: 30px
+  right: -150px
+  opacity: 0
+  transition: 0.2s ease-out
+  &.on
+    opacity: 1
+    right: 0
+  @media mq-mobile
+    width: 100%
+    right: -100%
+
+.search-form
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: #fff
+  padding: 5px 15px
+  border-radius: 15px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+.search-form-input
+  border: none
+  background: none
+  color: color-default
+  width: 100%
+  font: 13px font-sans
+  outline: none
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.search-form-submit
+  position: absolute
+  top: 50%
+  right: 10px
+  margin-top: -7px
+  font: 13px font-icon
+  border: none
+  background: none
+  color: #bbb
+  cursor: pointer
+  &:hover, &:focus
+    color: #777
