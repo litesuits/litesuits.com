@@ -1,6 +1,6 @@
 #main
   .section
-    padding: 72px 0
+    padding: 72px 0 0
     h3, .subtitle
       text-align: center
     h3
@@ -10,26 +10,69 @@
       font-size: 20px
       line-height: 33px
       color: rgb(120, 122, 125)
+    .icon
+      width: 128px
+      height: 128px
+      display: inline-block
+      background-size: 100%
+    h4
+      font-size: 24px
+      line-height: 40px
+    p
+      font-size: 18px
+      line-height: 33px
+      color: rgb(120, 122, 125)
+    .btn-main
+      margin-top: 15px
 
 .components-table
+  clearfix()
   margin: 64px 40px
   .component-row
-    margin-bottom: 60px
-  .icon
-    display: inline-block
-    width: 128px
-    height: 128px
-    background-size: 100%
-    margin-top: -10px
-  h4, p
-    padding-left: 158px
-  h4
-    font-size: 24px
-    line-height: 40px
-    margin-top: 10px
-  p
-    font-size: 18px
-    line-height: 33px
-    color: rgb(120, 122, 125)
-  .btn-main
-    margin-top: 15px
+    width: 48%
+    float: left
+    margin: 0 1% 60px
+    h4, p
+      padding-left: 158px
+
+#donations
+  background-color: color-background-grey
+  padding-bottom: 72px !important
+  h3
+    color: #717171
+  .donations-list
+    clearfix()
+    text-align: center
+    padding: 40px 0
+    .donation
+      color: #717171
+      font-size: 16px
+      text-decoration: none
+      padding: 10px 15px
+      margin: 0 10px 10px
+      display: inline-block
+      transition: 0.4s ease
+      border-radius: 4px
+      font-family: 'Microsoft Yahei', font-sans
+      &:hover
+        color: white
+        background-color: #28AFFA
+  .donation-ways
+    clearfix()
+    .way
+      width: 33%
+      float: left
+      margin-top: 40px
+      text-align: center
+      .btn-main
+        line-height: 1.5em
+      .icon
+        background-size: 384px 128px
+        background-repeat: no-repeat
+        background-image: url(images/sprite.png)
+      .coding
+          background-position: 0 0
+      .issue
+          background-position: -128px 0
+      .donate
+          background-position: -256px 0

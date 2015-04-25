@@ -7,6 +7,9 @@
       font-size: 32px
       line-height: 32px
       margin-top: 40px
+    .btn-main
+      font-size: 16px
+      padding: 12px 24px
   #slide-icon
     height: logo-size
     background-size: logo-size logo-size
@@ -28,8 +31,21 @@
       h3
         font-size: 24px
         line-height: 40px
-    .components-table
-      margin: 64px 20px
+      .icon
+        float: none
+      h4
+        font-size: 22px
+        line-height: 32px
+        margin-bottom: 10px
+      p
+        font-size: 18px
+        line-height: 28px
+  .components-table
+    margin: 64px 20px
+    .component-row
+      text-align: center
+      h4, p
+        padding-left: 0
 
 @media mq-tablet
   #header.index
@@ -51,8 +67,36 @@
         line-height: 40px
       .subtitle
         font-size: 18px
+      .icon
+        width: 96px
+        height: 96px
+        float: none
+      h4
+        font-size: 21px
+        line-height: 32px
+        margin-bottom: 10px
+      p
+        font-size: 17px
+        line-height: 25px
   .components-table
     margin: 64px 20px
+    .component-row
+      text-align: center
+      h4, p
+        padding-left: 0
+  #donations
+    .donation-ways
+      .way
+        width: 100%
+        margin-bottom: 20px
+        .icon
+          background-size: 288px 96px
+        .coding
+            background-position: 0 0
+        .issue
+            background-position: -96px 0
+        .donate
+            background-position: -192px 0
 
 @media mq-mobile
   #header.index
@@ -76,23 +120,38 @@
       .subtitle
         font-size: 17px
         line-height: 25px
+      .icon
+        width: 96px
+        height: 96px
+        float: none
+      h4
+        font-size: 21px
+        line-height: 32px
+        margin-bottom: 10px
+      p
+        font-size: 17px
+        line-height: 25px
   .components-table
     margin: 64px 0
     .component-row
       text-align: center
-    .icon
-      width: 96px
-      height: 96px
-      float: none
-    h4, p
-      padding-left: 0
-    h4
-      font-size: 21px
-      line-height: 32px
-      margin-bottom: 10px
-    p
-      font-size: 17px
-      line-height: 25px
+      h4, p
+        padding-left: 0
+  #donations
+    .donations-list
+      .donation
+        padding: 8px 12px
+    .donation-ways
+      .way
+        width: 100%
+        .icon
+          background-size: 288px 96px
+        .coding
+            background-position: 0 0
+        .issue
+            background-position: -96px 0
+        .donate
+            background-position: -192px 0
 
 @media screen and (max-width: 580px)
   #sub-nav,
@@ -103,6 +162,10 @@
   #footer .feature .right
     float: none
     text-align: center
+  .components-table
+    .component-row
+      width: 100%
+      margin: 0 0 60px
     
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
   .logo

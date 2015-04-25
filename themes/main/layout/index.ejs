@@ -1,17 +1,57 @@
 <div id="components" class="section">
-  <h3>Light but Powerful</h3>
-  <p class="subtitle">The core idea of Litesuits is to be small but powerful. With minimality, concentration, stability and flexibility, Litesuits will give you a brand-new experience of simple coding.</p>
-  <div class="components-table">
-  <% for(var i in site.data.projects) { %>
-    <% var project = site.data.projects[i] %>
-    <div class="component-row">
-      <span class="icon <%= project.name %> left"></span>
-      <h4><%= project.name %></h4>
-      <p class="description"><%= project.description %></p>
-      <p class="link">
-        <a class="btn-main btn-ghost" href="<%= project.link %>">Get <%= project.name %></a>
-      </p>
+  <div class="outer">
+    <h3>Light but Powerful</h3>
+    <p class="subtitle">The core idea of Litesuits is to be small but powerful. With minimality, concentration, stability and flexibility, Litesuits will give you a brand-new experience of simple coding.</p>
+    <div class="components-table">
+    <% for(var i in site.data.projects) { %>
+      <% var project = site.data.projects[i] %>
+      <div class="component-row">
+        <span class="icon <%= project.name %> left"></span>
+        <h4><%= project.name %></h4>
+        <p class="description"><%= project.description %></p>
+        <p class="link">
+          <a class="btn-main btn-ghost" href="<%= project.link %>">Get <%= project.name %></a>
+        </p>
+      </div>
+    <% } %>
     </div>
-  <% } %>
+  </div>
+</div>
+<div id="donations" class="section">
+  <div class="outer">
+    <h3>They helped to shape the future of Litesuits</h3>
+    <div class="donations-list">
+      <% for(var i in site.data.donations) { %>
+      <% var donation = site.data.donations[i] %>
+        <a class="donation" href="<%= donation.link %>" title="<%= donation.name %>"><%= donation.name %></a>
+      <% } %>
+    </div>
+    <h3>So can you by</h3>
+    <div class="donation-ways">
+      <div class="way">
+        <span class="icon coding"></span>
+        <h4>Coding</h4>
+        <p class="description">Send a pull request and express your ideas.</p>
+        <p class="link">
+          <a class="btn-main bg-green" href="#">View Projects</a>
+        </p>
+      </div>
+      <div class="way">
+        <span class="icon issue"></span>
+        <h4>Feedback</h4>
+        <p class="description">Report an issue to help us make Litesuits better.</p>
+        <p class="link">
+          <a class="btn-main bg-green" href="#">View Projects</a>
+        </p>
+      </div>
+      <div class="way">
+        <span class="icon donate"></span>
+        <h4>Donation</h4>
+        <p class="description">Fund us to give Litesuits a better future. Online payment supported.</p>
+        <p class="link">
+          <a class="btn-main bg-blue" href="#">Donate</a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>

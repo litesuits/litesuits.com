@@ -2,12 +2,10 @@
 <body>
   <div id="container">
     <%- partial('_partial/header', {index: is_home()}) %>
-    <div class="outer">
-      <section id="main"><%- body %></section>
-      <% if (!is_home()){ %>
-        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-      <% } %>
-    </div>
+    <section id="main"><%- body %></section>
+    <% if (!is_home()){ %>
+      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    <% } %>
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     <%- partial('_partial/scripts', {index: is_home()})%>
   </div>

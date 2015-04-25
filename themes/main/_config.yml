@@ -1,10 +1,9 @@
 # Header
 menu:
   Litesuits: '#'
-  Components: '#components'
   Docs: /
   About: /
-donate: /
+donate: '#donations'
 
 # Content
 excerpt_link: Read More
