@@ -10,15 +10,15 @@
         <h4><%= config.title %></h4>
       </div>
       <div class="btn-group right">
-        <a class="btn-main bg-green" href="/">Get Litesuits</a>
+        <a class="btn-main bg-green" href="<%= config.github %>">Get Litesuits</a>
       </div>
     </div>
     <div class="copyright">
       <h4 class="left">&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %></h4>
       <nav class="contacts right">
-        <a class="nav-link" href="#">QQ</a>
-        <a class="nav-link" href="#">Weibo</a>
-        <a class="nav-link" href="<%- url_for(config.github) %>">Github</a>
+      <% for(var i in theme.contacts) { %>
+        <a class="nav-link" href="<%- url_for(theme.contacts[i])%>"><%= i %></a>
+      <% } %>
       </nav>
     </div>
   </div>

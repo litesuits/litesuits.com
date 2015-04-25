@@ -102,4 +102,35 @@
 
     $container.removeClass('mobile-nav-on');
   });
+
+  // Scroll
+  $(document).on('scroll', function () {
+    if($(this).scrollTop() > $('#header').height() - 57){
+      $('#header-inner').addClass('fixed');
+      $('#header-inner > div').addClass('outer');
+    } else {
+      $('#header-inner').removeClass('fixed');
+      $('#header-inner > div').removeClass('outer');
+    }
+  });
+
+  // Wrapper Box
+  $('#donate').on('click', function (e) {
+    var way = $('.way'),
+        donation = $('#donation-box');
+    way.fadeOut('fast', function () {
+      donation.fadeIn('fast');
+    });
+  });
+  $('#donation-box-return').on('click', function (e) {
+    var way = $('.way'),
+        donation = $('#donation-box');
+    donation.fadeOut('fast', function () {
+      way.fadeIn('fast');
+    });
+  });
+  $('#method-1').on('click', function (e) {
+    $('form[name=alipay_form]').submit();
+  });
+
 })(jQuery);

@@ -5,6 +5,13 @@ menu:
   About: /
 donate: '#donations'
 
+contacts:
+  About Design: '#'
+  Github: 'https://github.com/litesuits'
+  Blog: '#'
+  EOE: '#'
+  zhihu: '#'
+
 # Content
 excerpt_link: Read More
 fancybox: true

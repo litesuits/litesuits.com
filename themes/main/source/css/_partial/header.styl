@@ -3,6 +3,16 @@
   background: color-header-background
   &.index
     background: color-header-background url(images/bg_teaser.svg) 50% 50% no-repeat
+  #header-inner.fixed
+    top: 0
+    left: 0
+    margin: 0
+    width: 100%
+    z-index: 100
+    position: fixed
+    background: color-header-background
+    & + #header-playground
+      display: none
 
 #header-outer
   height: 100%
@@ -24,14 +34,6 @@
   float: left
   margin-left: -15px
 
-#main-nav-toggle
-  display: none
-  font-family: 'FontAwesome'
-  &:before
-    content: "\f0c9"
-  @media mq-mobile
-    display: block
-
 #sub-nav
   float: right
   margin-right: -15px
@@ -51,10 +53,14 @@
   100%
     opacity: 1
 
-#what-are-litesuits:after
-  animation: cursor-blink 0.8s linear infinite
-  content: "|"
-  padding-left: 3px
+#what-are-litesuits
+  &:before
+    content: ""
+    padding-right: 6px
+  &:after
+    animation: cursor-blink 0.8s linear infinite
+    content: "|"
+    padding-left: 3px
 
 #search-form-wrap
   position: absolute

@@ -49,8 +49,23 @@
         <h4>Donation</h4>
         <p class="description">Fund us to give Litesuits a better future. Online payment supported.</p>
         <p class="link">
-          <a class="btn-main bg-blue" href="#">Donate</a>
+          <a class="btn-main bg-blue" id="donate" href="javascript:;">Donate</a>
         </p>
+      </div>
+      <div id="donation-box">
+        <form name="alipay_form" method="post" action="https://shenghuo.alipay.com/send/payment/fill.htm" target="_blank" accept-charset="GBK" onsubmit="document.charset='gbk';">
+            <input type="hidden" name="optEmail" value="imatianyu@qq.com">
+            <input type="hidden" name="payAmount">
+            <input type="hidden" name="title" value="支持开源">
+            <input type="hidden" name="memo" value="Thanks and love u">
+            <input type="hidden" name="pay" value="支持开源">
+            <span id="method-1" class="method"></span>
+        </form>
+        <span id="method-2" class="method"></span>
+        <span id="method-3" class="method"></span>
+        <div>
+          <a id="donation-box-return" class="btn-main btn-ghost" href="javascript:;">Return</a>
+        </div>
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@
 </script>
 <% } %>
 
-<script src="//ajax.useso.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<%- js('js/jquery.min') %>
 
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
@@ -22,6 +22,7 @@
 <% } %>
 
 <%- js('js/script') %>
+<%- js('js/smoothScrolling') %>
 <% if(index) {%>
   <%- js('js/textSlides') %>
 <%}%>

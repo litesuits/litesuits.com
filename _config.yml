@@ -9,7 +9,7 @@ description:
 author: PPOffice
 language:
 timezone:
-github: https://github.com/litesuits.com
+github: https://github.com/litesuits
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

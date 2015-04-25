@@ -1,6 +1,7 @@
 @media mq-desktop
-  #header.index
-    height: 760px
+  #header
+    &.index
+      height: 760px
   #header-playground
     margin-top: 100px
     h2
@@ -46,6 +47,15 @@
       text-align: center
       h4, p
         padding-left: 0
+  #donations
+    .donation-ways
+      #donation-box
+        .method
+          width: 200px
+          height: 200px
+          background-size: 180px 180px
+        #method-1
+          background-size: 180px 62px
 
 @media mq-tablet
   #header.index
@@ -97,16 +107,29 @@
             background-position: -96px 0
         .donate
             background-position: -192px 0
+      #donation-box
+        .method
+          width: 160px
+          height: 160px
+          background-size: 140px 140px
+        #method-1
+          background-size: 140px 49px
 
 @media mq-mobile
   #header.index
-    height: 360px
+    height: 400px
   #header-playground
     margin-top: 20px
     h2
       font-size: 16px
-      line-height: 16px
+      line-height: 24px
       margin-top: 20px
+      #what-are-litesuits
+        display: block
+    .btn-group
+      margin-top: 30px
+  #sub-nav
+    display: none
   #slide-icon
     height: logo-size * 0.4
     background-size: logo-size * 0.4 logo-size * 0.4
@@ -132,7 +155,7 @@
         font-size: 17px
         line-height: 25px
   .components-table
-    margin: 64px 0
+    margin: 64px 0 0
     .component-row
       text-align: center
       h4, p
@@ -152,9 +175,21 @@
             background-position: -96px 0
         .donate
             background-position: -192px 0
+      #donation-box
+        .method
+          margin-bottom: 30px
+  #footer
+    .copyright
+      text-align: center
+      .left, .right
+        float: none
+      .contacts
+        margin-top: 10px
+        .nav-link
+          float: none
+          display: inline-block
 
 @media screen and (max-width: 580px)
-  #sub-nav,
   #footer .feature .left
     display: none
   #footer .feature > div
@@ -171,3 +206,8 @@
   .logo
     background: url("images/logo@2x.png") center center no-repeat
     background-size: 64px 64px
+  #donations
+    .donation-ways
+      .way
+        .icon
+          background-image: url(images/sprite@2x.png)
